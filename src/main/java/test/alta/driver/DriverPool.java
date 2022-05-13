@@ -6,7 +6,6 @@ import java.util.HashMap;
 
 public class DriverPool {
     private HashMap<String, AndroidDriver> android = new HashMap<>();
-
     public AndroidDriver getAndroidDriver(){
         return this.android.get(Thread.currentThread().getName());
     }
